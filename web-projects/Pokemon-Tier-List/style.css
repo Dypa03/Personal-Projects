@@ -1,0 +1,235 @@
+/* Aggiorna lo stile dell'intera pagina */
+
+:root {
+    --body-color: #f0f0f0;
+    --header-color: #333;
+
+    --tier-F-color: #338bff; /* Colore per il tier F */
+    --tier-E-color: #90ccc8; /* Colore per il tier E */
+    --tier-D-color: #00ffd0; /* Colore per il tier D */
+    --tier-C-color: #00e84d; /* Colore per il tier C */
+    --tier-B-color: #68d600; /* Colore per il tier B */
+    --tier-A-color: #a37800; /* Colore per il tier A */
+    --tier-S-color: #f31212; /* Colore per il tier S */
+    --tier-Z-color: #c308fc; /* Colore per il tier Z */
+}
+
+* {
+    
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--body-color);
+    line-height: 1.5;
+
+    min-width: 520px;
+}
+
+/* welcome section */
+
+header {
+    background-color: var(--header-color);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+/* tier list */
+
+#main {
+    padding: 20px;
+    width: 80%;
+
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#tier-list {
+    display: flex;
+    align-items: center;
+
+    margin-top: 20px;
+    width: 100%;
+}
+
+.grid {
+    width: 100%;
+}
+
+.row {
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+
+    width: 100%;
+    min-height: 100px;
+}
+
+.tier {
+    background-color: #3498db;
+    color: #fff;
+
+    
+    font-weight: 500;
+    font-size: 1.4rem;
+    padding: 5px 10px;
+    border-radius: 5px;
+
+    width: 100px;
+    min-height: 100px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* colori tier */
+
+#z{
+    background-color: var(--tier-Z-color);
+}
+
+#s {
+    background-color: var(--tier-S-color);
+}
+
+#a {
+    background-color: var(--tier-A-color);
+}
+
+#b {
+    background-color: var(--tier-B-color);
+}
+
+#c {
+    background-color: var(--tier-C-color);
+}
+
+#d {
+    background-color: var(--tier-D-color);
+}
+
+#e {
+    background-color: var(--tier-E-color);
+}
+
+#f   {
+    background-color: var(--tier-F-color);
+}
+
+/* Stile per la drop zone */
+.drop-zone {
+    border: 1px solid #444444;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    cursor: pointer;
+
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    align-items: center;
+    gap: 5px;
+
+    height: 90px;
+    width: 90%;
+
+    transition: min-height 0.3s ease-in-out;
+}
+
+
+#pokemon-list {
+    margin-top: 20px;
+    margin-left: 40px;
+    display: flex;
+    flex-wrap: wrap;    
+    gap: 10px;
+}
+
+/* settings */
+
+.settings {
+    color: var(--header-color);
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+/* Stile per i Pokémon */
+.pokemon {
+    border: 1px solid #ccc;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: grab;
+    /*user-drag: none;
+    */
+    width: 60px;
+    height: 60px;
+
+}
+
+
+/* media rules */
+
+@media screen and (max-width: 680px) {
+
+    
+    #main {
+        width: 93%;
+        padding: 10px;
+    }
+
+    .tier {
+        width: 50px;
+    }
+
+    .pokemon {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+/* media rules for .dropzones */
+
+@media screen and (min-width: 1300px) and (max-width: 1429px) {
+    .drop-zone {
+        grid-template-columns: repeat(8, 1fr);
+    }
+}
+
+@media screen and (min-width: 1175px) and (max-width: 1299px) {
+    .drop-zone {
+        grid-template-columns: repeat(7, 1fr);
+    }
+}
+
+@media screen and (min-width: 1040px) and (max-width: 1174px) {
+    .drop-zone {
+        grid-template-columns: repeat(6, 1fr);
+    }
+}
+
+@media screen and (min-width: 920px) and (max-width: 1039px) {
+    .drop-zone {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+
+@media screen and (max-width: 919px) {
+    .drop-zone {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

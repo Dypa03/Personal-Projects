@@ -1,0 +1,245 @@
+
+<div class="settings-window">
+    <h2>Modify Tier Color</h2>
+    <div class="colorPicker">
+        <div class="colors" id="color1"></div>
+        <div class="colors" id="color2"></div>
+        <div class="colors" id="color3"></div>
+        <div class="colors" id="color4"></div>
+        <div class="colors" id="color5"></div>
+        <div class="colors" id="color6"></div>
+        <div class="colors" id="color7"></div>
+        <div class="colors" id="color8"></div>
+        <div class="colors" id="color9"></div>
+        <div class="colors" id="color10"></div>
+        <div class="colors" id="color11"></div>
+        <div class="colors" id="color12"></div>
+        <div class="colors" id="color13"></div>
+        <div class="colors" id="color14"></div>
+        <div class="colors" id="color15"></div>
+        <div class="colors" id="color16"></div>
+        <div class="colors" id="color17"></div>
+        <div class="colors" id="color18"></div>
+        <div class="colors" id="color19"></div>
+        <div class="colors" id="color20"></div>
+    </div>
+    <h2>Modify Tier Name</h2>
+    <input type="text" name="tier-name" id="tier-name" placeholder="insert name here">
+    <div class="modifiers-box">
+        <button class="modify-buttons" id="add-row-above">Add row above</button>
+        <button class="modify-buttons" id="delete-row-above">Delete row above</button>
+        <button class="modify-buttons" id="add-row-below">Add row below</button>
+        <button class="modify-buttons" id="delete-row-below">Delete row below</button>
+    </div>
+
+    <button class="close-button">Close</button>
+</div>
+
+<style>
+    :root {
+    --body-color: #f0f0f0;
+    --text-color: #333;
+    --buttons-color: #5f5e4e;
+    --close-button-color: rgb(0, 166, 255);
+
+    --color1: #FF0000; /* Red */
+    --color2: #FF3300;
+    --color3: #FF6600;
+    --color4: #FF9900;
+    --color5: #FFCC00; /* Yellow */
+    --color6: #FFFA00;
+    --color7: #FFFF66;
+    --color8: #00FF00; /* Green */
+    --color9: #00FF33;
+    --color10: #00FF66;
+    --color11: #00FF99;
+    --color12: #00FFCC;
+    --color13: #00FFFF; /* Blue */
+    --color14: #0099FF;
+    --color15: #6600FF; /* Violet */
+    --color16: #9933FF; /* Purple */
+    --color17: #CC00FF; /* Magenta */
+    --color18: #FF00CC; /* Pink */
+    --color19: #FF3399; /* Coral */
+    --color20: #FF6666; /* Light Red */
+}
+
+/* Styles for the settings window */
+.settings-window {
+    width: 400px;
+    padding: 20px;
+    background-color: var(--body-color);
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.2);
+    font-family: Arial, sans-serif;
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.settings-window h2 {
+    font-size: 1.5rem;
+    color: var(--text-color);
+}
+
+h2:first-of-type {
+    margin-top: 0;
+}
+
+/* color Picker */
+
+.colorPicker {
+    
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 10px;
+
+    width: 85%;
+    padding: 10px;
+    
+}
+
+.colors {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+#color1 {
+    background-color: var(--color1);
+}
+
+#color2 {
+    background-color: var(--color2);
+}
+
+#color3 {
+    background-color: var(--color3);
+}
+
+#color4 {
+    background-color: var(--color4);
+}
+
+#color5 {
+    background-color: var(--color5);
+}
+
+#color6 {
+    background-color: var(--color6);
+}
+
+#color7 {
+    background-color: var(--color7);
+}
+
+#color8 {
+    background-color: var(--color8);
+}
+
+#color9 {
+    background-color: var(--color9);
+}
+
+#color10 {
+    background-color: var(--color10);
+}
+
+#color11 {
+    background-color: var(--color11);
+}
+
+#color12 {
+    background-color: var(--color12);
+}
+
+#color13 {
+    background-color: var(--color13);
+}
+
+#color14 {
+    background-color: var(--color14);
+}
+
+#color15 {
+    background-color: var(--color15);
+}
+
+#color16 {
+    background-color: var(--color16);
+}
+
+#color17 {
+    background-color: var(--color17);
+}
+
+#color18 {
+    background-color: var(--color18);
+}
+
+#color19 {
+    background-color: var(--color19);
+}
+
+#color20 {
+    background-color: var(--color20);
+}
+
+/* tier chenge name */
+
+
+#tier-name {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.modifiers-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-evenly;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.modify-buttons {
+    padding: 10px 20px;
+    background-color: var(--buttons-color);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.modify-buttons:hover {
+    background-color: #555;
+}
+
+.close-button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    width: 340px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: var(--close-button-color);
+    color: var(--body-color);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+</style>

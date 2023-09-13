@@ -1,0 +1,188 @@
+:root {
+    --color-header: #ffe24f;
+    --color-footer: #CCCCCC;
+    --color-nav-text: #003bb2;
+    --color-button: rgba(73, 73, 73, 0.9);
+    --color-background-button: aqua; 
+
+    --color-text: #333333
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+
+    font-size: 1.9rem;
+    font-family: 'Poppins', sans-serif;
+    background-color: white;
+    line-height: 1.5;
+}
+
+ol {
+    margin-left: 20px;
+}
+
+.italic {
+    font-style: italic;
+}
+
+/* Header */
+
+#header {
+    width: 100%;
+    height: 100px;
+    background-color: var(--color-header);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.logo {
+    width: 200px;
+    height: 100%;
+    object-fit: cover;
+    margin-left: 10px;
+}
+
+.nav-bar {
+    margin-right: 20px;
+}
+
+.nav-bar ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.nav-bar li {
+    margin-right: 20px;
+    font-size: 2.2rem;
+}
+
+.nav-bar a {
+    color: var(--color-nav-text);
+    text-decoration: none;
+}
+
+/* sections */
+
+.sections {
+    width: 70%;
+    max-width: 800px;
+    margin: 120px auto;
+    text-align: justify;
+    color: var(--color-text);
+}
+
+/* Introduction */
+
+h3 {
+    font-size: 2.8rem;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+.sections:first-of-type {
+    margin-top: 220px;
+    margin-bottom: 140px;
+}
+
+/* Top 3 */
+
+.top-games img {
+    width: 100%;
+    object-fit: cover;
+    margin: 10px 0;
+}
+
+.top-games {
+    margin-top: 120px;
+}
+
+/* Metroid Dread */
+
+.top-games:first-of-type {
+    margin-top: 20px;
+}
+
+/* Useless button */
+
+#myButton {
+    margin-top: 5px;
+    padding: 10px;
+    border: 2.5px solid var(--color-button);
+    border-radius: 4px;
+    font-size: 1.4rem;
+    font-weight: 700;
+
+    color: var(--color-button);
+    background-color: var(--color-background-button);
+}
+
+/* Footer */
+footer {
+    background-color: var(--color-footer);
+    height: 200px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+footer img {
+    width: 90px;
+}
+
+footer p {
+    color: white;
+    width: 50%;
+    text-align: center;
+
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+/* media rules */
+
+@media only screen and (max-width: 630px) {
+    #header {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .logo {
+        margin-left: 0;
+        width: 140px;
+        height: 50%;
+    }
+
+    #nav-bar {
+        margin-right: 0;
+    }
+
+    #nav-bar li {
+        font-size: 1.9rem;
+    }
+}

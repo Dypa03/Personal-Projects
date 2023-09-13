@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Pokémon Tier List</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Pokémon Tier List</h1>
+    </header>
+    <main id="main">
+        <section id="tier-list">
+            <div class="grid">
+                <div class="row" data-id="z">
+                    <div class="tier" id="z">Z</div>
+                    <div class="drop-zone"></div>
+                    <i class="fas fa-cog settings" data-tier="z"></i>
+                </div>
+                <div class="row" data-id="s">
+                    <div class="tier" id="s">S</div>
+                    <div class="drop-zone"></div>
+                    <i class="fas fa-cog settings" data-tier="s"></i>
+                </div>
+                <div class="row" data-id="a">
+                    <div class="tier" id="a">A</div>
+                    <div class="drop-zone"></div>
+                    <i class="fas fa-cog settings" data-tier="a"></i>
+                </div>
+                <div class="row" data-id="b">
+                    <div class="tier" id="b">B</div>
+                    <div class="drop-zone"></div>
+                    <i class="fas fa-cog settings" data-tier="b"></i>
+                </div>
+                <div class="row" data-id="c">
+                    <div class="tier" id="c">C</div>
+                    <div class="drop-zone"></div>
+                    <i class="fas fa-cog settings" data-tier="c"></i>
+                </div>
+                <div class="row" data-id="d">
+                    <div class="tier" id="d">D</div>
+                    <div class="drop-zone"></div>
+                    <i class="fas fa-cog settings" data-tier="d"></i>
+                </div>
+                <div class="row" data-id="e">
+                    <div class="tier" id="e">E</div>
+                    <div class="drop-zone"></div>
+                    <i class="fas fa-cog settings" data-tier="e"></i>
+                </div>
+                <div class="row" data-id="f">
+                    <div class="tier" id="f">F</div>
+                    <div class="drop-zone"></div>
+                    <i class="fas fa-cog settings" data-tier="f"></i>
+                </div>
+            </div>
+        </section>
+
+        <section id="pokemon-list">
+            <!-- Gen 1 -->
+            <img src="pokemons/bulbasaur.png" alt="" id="bulbasaur" class="pokemon" data-id="bulbasaur" draggable="true">
+            <img src="pokemons/ivysaur.png" alt="" id="ivysaur" class="pokemon" data-id="ivysaur" draggable="true">
+            <img src="pokemons/venusaur.png" alt="" id="venusaur" class="pokemon" data-id="venusaur" draggable="true">
+            <img src="pokemons/charmander.png" alt="" id="charmander" class="pokemon" data-id="charmander" draggable="true">
+            <img src="pokemons/charmeleon.png" alt="" id="charmeleon" class="pokemon" data-id="charmeleon" draggable="true">
+            <img src="pokemons/charizard.png" alt="" id="charizard" class="pokemon" data-id="charizard" draggable="true">
+            <img src="pokemons/squirtle.png" alt="" id="squirtle" class="pokemon" data-id="squirtle" draggable="true">
+            <img src="pokemons/wartortle.png" alt="" id="wartortle" class="pokemon" data-id="wartortle" draggable="true">
+            <img src="pokemons/blastoise.png" alt="" id="blastoise" class="pokemon" data-id="blastoise" draggable="true">
+            
+            <!-- Gen 2 -->
+            <img src="pokemons/chikorita.png" alt="" id="chikorita" class="pokemon" data-id="chikorita" draggable="true">
+            <img src="pokemons/bayleef.png" alt="" id="bayleef" class="pokemon" data-id="bayleef" draggable="true">
+            <img src="pokemons/meganium.png" alt="" id="meganium" class="pokemon" data-id="meganium" draggable="true">
+            <img src="pokemons/cyndaquil.png" alt="" id="cyndaquil" class="pokemon" data-id="cyndaquil" draggable="true">
+            <img src="pokemons/quilava.png" alt="" id="quilava" class="pokemon" data-id="quilava" draggable="true">
+            <img src="pokemons/typhlosion.png" alt="" id="typhlosion" class="pokemon" data-id="typhlosion" draggable="true">
+            <img src="pokemons/totodile.png" alt="" id="totodile" class="pokemon" data-id="totodile" draggable="true">
+            <img src="pokemons/croconaw.png" alt="" id="croconaw" class="pokemon" data-id="croconaw" draggable="true">
+            <img src="pokemons/feraligatr.png" alt="" id="feraligatr" class="pokemon" data-id="feraligatr" draggable="true">
+            
+            <!-- Gen 3 -->
+            <img src="pokemons/treecko.png" alt="" id="treecko" class="pokemon" data-id="treecko" draggable="true">
+            <img src="pokemons/grovyle.png" alt="" id="grovyle" class="pokemon" data-id="grovyle" draggable="true">
+            <img src="pokemons/sceptile.png" alt="" id="sceptile" class="pokemon" data-id="sceptile" draggable="true">
+            <img src="pokemons/torchic.png" alt="" id="torchic" class="pokemon" data-id="torchic" draggable="true">
+            <img src="pokemons/combusken.png" alt="" id="combusken" class="pokemon" data-id="combusken" draggable="true">
+            <img src="pokemons/blaziken.png" alt="" id="blaziken" class="pokemon" data-id="blaziken" draggable="true">
+            <img src="pokemons/mudkip.png" alt="" id="mudkip" class="pokemon" data-id="mudkip" draggable="true">
+            <img src="pokemons/marshtomp.png" alt="" id="marshtomp" class="pokemon" data-id="marshtomp" draggable="true">
+            <img src="pokemons/swampert.png" alt="" id="swampert" class="pokemon" data-id="swampert" draggable="true">
+            
+            <!-- Gen 4 -->
+            <img src="pokemons/turtwig.png" alt="" id="turtwig" class="pokemon" data-id="turtwig" draggable="true">
+            <img src="pokemons/grotle.png" alt="" id="grotle" class="pokemon" data-id="grotle" draggable="true">
+            <img src="pokemons/torterra.png" alt="" id="torterra" class="pokemon" data-id="torterra" draggable="true">
+            <img src="pokemons/chimchar.png" alt="" id="chimchar" class="pokemon" data-id="chimchar" draggable="true">
+            <img src="pokemons/monferno.png" alt="" id="monferno" class="pokemon" data-id="monferno" draggable="true">
+            <img src="pokemons/infernape.png" alt="" id="infernape" class="pokemon" data-id="infernape" draggable="true">
+            <img src="pokemons/piplup.png" alt="" id="piplup" class="pokemon" data-id="piplup" draggable="true">
+            <img src="pokemons/prinplup.png" alt="" id="prinplup" class="pokemon" data-id="prinplup" draggable="true">
+            <img src="pokemons/empoleon.png" alt="" id="empoleon" class="pokemon" data-id="empoleon" draggable="true">
+            
+            <!-- Gen 5 -->
+            <img src="pokemons/snivy.png" alt="" id="snivy" class="pokemon" data-id="snivy" draggable="true">
+            <img src="pokemons/servine.png" alt="" id="servine" class="pokemon" data-id="servine" draggable="true">
+            <img src="pokemons/serperior.png" alt="" id="serperior" class="pokemon" data-id="serperior" draggable="true">
+            <img src="pokemons/tepig.png" alt="" id="tepig" class="pokemon" data-id="tepig" draggable="true">
+            <img src="pokemons/pignite.png" alt="" id="pignite" class="pokemon" data-id="pignite" draggable="true">
+            <img src="pokemons/emboar.png" alt="" id="emboar" class="pokemon" data-id="emboar" draggable="true">
+            <img src="pokemons/oshawott.png" alt="" id="oshawott" class="pokemon" data-id="oshawott" draggable="true">
+            <img src="pokemons/dewott.png" alt="" id="dewott" class="pokemon" data-id="dewott" draggable="true">
+            <img src="pokemons/samurott.png" alt="" id="samurott" class="pokemon" data-id="samurott" draggable="true">
+
+            <!-- Gen 6 -->
+            <img src="pokemons/chespin.png" alt="" id="chespin" class="pokemon" data-id="chespin" draggable="true">
+            <img src="pokemons/quilladin.png" alt="" id="quilladin" class="pokemon" data-id="quilladin" draggable="true">
+            <img src="pokemons/chesnaught.png" alt="" id="chesnaught" class="pokemon" data-id="chesnaught" draggable="true">
+            <img src="pokemons/fennekin.png" alt="" id="fennekin" class="pokemon" data-id="fennekin" draggable="true">
+            <img src="pokemons/braixen.png" alt="" id="braixen" class="pokemon" data-id="braixen" draggable="true">
+            <img src="pokemons/delphox.png" alt="" id="delphox" class="pokemon" data-id="delphox" draggable="true">
+            <img src="pokemons/froakie.png" alt="" id="froakie" class="pokemon" data-id="froakie" draggable="true">
+            <img src="pokemons/frogadier.png" alt="" id="frogadier" class="pokemon" data-id="frogadier" draggable="true">
+            <img src="pokemons/greninja.png" alt="" id="greninja" class="pokemon" data-id="greninja" draggable="true">
+
+            <!-- Gen 7 -->
+            <img src="pokemons/rowlet.png" alt="" id="rowlet" class="pokemon" data-id="rowlet" draggable="true">
+            <img src="pokemons/dartrix.png" alt="" id="dartrix" class="pokemon" data-id="dartrix" draggable="true">
+            <img src="pokemons/decidueye.png" alt="" id="decidueye" class="pokemon" data-id="decidueye" draggable="true">
+            <img src="pokemons/litten.png" alt="" id="litten" class="pokemon" data-id="litten" draggable="true">
+            <img src="pokemons/torracat.png" alt="" id="torracat" class="pokemon" data-id="torracat" draggable="true">
+            <img src="pokemons/incineroar.png" alt="" id="incineroar" class="pokemon" data-id="incineroar" draggable="true">
+            <img src="pokemons/popplio.png" alt="" id="popplio" class="pokemon" data-id="popplio" draggable="true">
+            <img src="pokemons/brionne.png" alt="" id="brionne" class="pokemon" data-id="brionne" draggable="true">
+            <img src="pokemons/primarina.png" alt="" id="primarina" class="pokemon" data-id="primarina" draggable="true">
+
+            <!-- Gen 8 -->
+            <img src="pokemons/grookey.png" alt="" id="grookey" class="pokemon" data-id="grookey" draggable="true">
+            <img src="pokemons/thwackey.png" alt="" id="thwackey" class="pokemon" data-id="thwackey" draggable="true">
+            <img src="pokemons/rillaboom.png" alt="" id="rillaboom" class="pokemon" data-id="rillaboom" draggable="true">
+            <img src="pokemons/scorbunny.png" alt="" id="scorbunny" class="pokemon" data-id="scorbunny" draggable="true">
+            <img src="pokemons/raboot.png" alt="" id="raboot" class="pokemon" data-id="raboot" draggable="true">
+            <img src="pokemons/cinderace.png" alt="" id="cinderace" class="pokemon" data-id="cinderace" draggable="true">
+            <img src="pokemons/sobble.png" alt="" id="sobble" class="pokemon" data-id="sobble" draggable="true">
+            <img src="pokemons/drizzile.png" alt="" id="drizzile" class="pokemon" data-id="drizzile" draggable="true">
+            <img src="pokemons/inteleon.png" alt="" id="inteleon" class="pokemon" data-id="inteleon" draggable="true">
+
+
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Pokémon Tier List</p>
+    </footer>
+</body>
+</html>
