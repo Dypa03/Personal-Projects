@@ -1,0 +1,207 @@
+:root {
+  --color-header: #d90606;
+  --color-footer: #CCCCCC;
+  --color-nav-text: #ffea00;
+  --color-button: rgba(73, 73, 73, 0.9);
+  --color-background: rgb(238, 252, 244); 
+
+  --color-text: #333333
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+
+  font-size: 1.9rem;
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--color-background);
+  line-height: 1.5;
+  overflow-x: hidden;
+}
+
+/*
+.italic {
+  font-style: italic;
+}
+*/
+
+/* Header */
+
+#header {
+  width: 100%;
+  height: 120px;
+  background-color: var(--color-header);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.logo {
+  width: 130px;
+  object-fit: cover;
+  margin-left: 50px;
+}
+
+.nav-bar {
+  margin-right: 5 0px;
+}
+
+.nav-bar ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.nav-bar li {
+  margin-right: 20px;
+  font-size: 2.2rem;
+}
+
+.nav-bar a {
+  color: var(--color-nav-text);
+  text-decoration: none;
+}
+
+.nav-bar a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+/* sections */
+
+.sections {
+  width: 75%;
+  margin: 80px auto;
+  text-align: justify;
+  color: var(--color-text);
+}
+
+
+/* Introduction and Conclusion */
+
+
+
+h2 {
+  font-size: 4rem;
+  text-align: center;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+#introduction {
+  margin-top: 180px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  max-width: 800px;
+}
+
+#introduction p, #conclusion p {
+  text-align: center;
+  font-weight: 500;
+  font-size: 2.2rem;
+}
+
+#conclusion {
+  max-width: 800px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+/* Tier List */
+
+h3 {
+  margin-top: 200px;
+  font-size: 4rem;
+}
+
+#Okumura h3 {
+  margin-top: 80px;
+}
+
+#palaces-tier p {
+  margin-top: 20px;
+  text-align: justify;
+}
+
+#palaces-tier img {
+  width: 100%;
+  max-height: 800px;
+}
+
+.votes {
+  font-weight: 700;
+  font-size: 3.5rem;
+}
+
+/* Footer */
+.footer {
+  background-color: var(--color-footer);
+  height: 200px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.footer img {
+  width: 90px;
+}
+
+.footer p {
+  color: white;
+  width: 50%;
+  text-align: center;
+
+  padding-top: 20px;
+  margin-bottom: 20px;
+}
+
+
+/* media rules */
+
+@media only screen and (max-width: 630px) {
+  #header {
+      flex-direction: column;
+      justify-content: center;
+      padding-bottom: 10px;
+  }
+
+  .logo {
+      margin-left: 0;
+      width: 100px;
+      
+  }
+
+  #nav-bar {
+      margin-right: 0;
+      
+  }
+
+  #nav-bar li {
+      font-size: 1.8rem;
+  }
+}

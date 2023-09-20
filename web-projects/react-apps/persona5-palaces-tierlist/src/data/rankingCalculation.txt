@@ -1,0 +1,34 @@
+Parameters: Exploration 10, Boss 8, OST 7, TOT
+
+Kamoshida: 10, 9, 7 = 100 + 72 + 49 / 25 -> 8.5
+
+Madarame: 10, 6, 7 = 100 + 48 + 49 / 25 -> 8
+
+Kaneshiro: 8, 7.5, 10 = 80 + 60 + 70 / 25 -> 8+
+
+Futaba: 10, 10, 8 = 100 + 80 + 48 / 25 -> 9 1/2
+
+Okumura: 5, 6, 8 = 50 + 48 + 56 / 25 -> 6
+
+Sae: 8, 8, 10 =  80 + 64 + 70 / 25 -> 8 1/2
+
+Shido: 8, 10, 8 = 80 + 80 + 56 / 25 -> 8 1/2
+
+Deep Mementos: 7, 8, 5 = 70 + 80 + 49 / 25 -> 7-
+
+Maruki: 10, 10, 10 = MAX -> 10
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+9 - Okumura 6
+Penso che questa e la prossima posizione siano le più prevedibili e oggettive. Il palazzo del povero Okumura(Okumura e povero non stanno molto bene inseme...) presenta molti problemi nell'esplorazione, infatti presenta molte parti eccessivamente ripetitive e alcuni puzzle esageratamente frustranti. Mi riferisco in particolare all'ultima parte, quella della Airlock Puzzle, che con quei interruttori che non si capiva cosa aprivano e chiudevano E SOPRATTUTTO NON ERANO REVERSIBILI mi ha fatto perdere la calma. E come se non bastasse aggiungiamogli un boss dove devi sconfiggere tutti i nemici in 2 turni per 4 volte dove uno ha anche la difesa buffata e soli 250 minuti per sconfiggere tutto il boss. Insomma, si tilta in questo palazzo, ma ciò non toglie che sia comunque un buon dungeon, salvato anche dalla OST(Sweatshop) che dà delle vibes incredibili
+
+
+8 - Deep Mementos 6
+7 - Madarame 7
+6 - Sae 7 1/2
+5 - Shido 8
+4 - Kaneshiro 8
+25 - Kamoshida 8+
+2 - Futaba 9-
+1 - Maruki 10
